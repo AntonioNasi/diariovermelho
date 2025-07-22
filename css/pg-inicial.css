@@ -95,7 +95,7 @@ header nav .ct-icones a:active{
     transform: scale(105%);
 }
 header nav .ct-icones a img{
-    width: 60px;
+    width: 50px;
 }
 header nav .ct-icones a #livro{
     width: 45px;
@@ -103,4 +103,67 @@ header nav .ct-icones a #livro{
 header nav .ct-icones a p{
     text-align: center;
     font-family: Girassol;
+}
+
+/* Seção de Prévias */
+section .ct-previas{
+    width: 1200px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+section a{
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    background-color: rgb(52, 58, 64, .3);
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+section a:hover{
+    background-size: 105%;
+    transition: background-size 1s;
+}
+section a:nth-child(1){
+    grid-column: 1/3;
+    grid-row: 1/3;
+    height: auto;
+}
+section .previas h2{
+    display: block;
+    background-color: #ff0000;
+    padding: 10px;
+    letter-spacing: 1px;
+    font-size: 22px;
+}
+
+/* Background dos posts */
+section #post9{
+    background-image: url(https://ambrosia.com.br/wp-content/uploads/2024/05/Star-Trek-Discovery.jpg.webp);
+}
+section #post8{
+    background-image: url(https://iso.500px.com/wp-content/uploads/2014/06/W4A2827-1-3000x2000.jpg);
+}
+section #post7{
+    background-image: url(https://zenfolio.com/wp-content/uploads/2022/09/main-landscape-idea-photo.jpg);
+}
+section #post6{
+    background-image: url(https://rosshillart.com/cdn/shop/articles/R._Delino_Landscape_art_-_Rosshillart.com.jpg?v=1703181542);
+}
+section #post5{
+    background-image: url(https://images.pexels.com/photos/1107717/pexels-photo-1107717.jpeg?cs=srgb&dl=pexels-fotios-photos-1107717.jpg&fm=jpg);
+}
+section #post4{
+    background-image: url(https://img.freepik.com/vetores-gratis/fundo-de-paisagem-rural-em-gradiente_52683-126763.jpg?semt=ais_hybrid&w=740);
+}
+section #post3{
+    background-image: url(https://www.muralunique.com/wp-content/uploads/2023/07/2173-01_mountainous-landscape.jpg);
+}
+section #post2{
+    background-image: url(https://media.istockphoto.com/id/583809524/pt/foto/alberta-wilderness-near-banff.jpg?s=612x612&w=0&k=20&c=Pj_VM7nJseUZvOP2ub7amFh4JzyVh2n2rJ-h7n6EZ3I=);
+}
+section #post1{
+    background-image: url(https://www.adorama.com/alc/wp-content/uploads/2018/11/landscape-photography-tips-yosemite-valley-feature.jpg);
 }
