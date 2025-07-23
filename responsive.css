@@ -1,0 +1,41 @@
+@media screen and (max-width:600px){
+
+    /* Barra topo */
+    .bar-top{
+        width: auto;
+        height: 50px;
+    }
+    .bar-top .rd-social{
+        width: auto;
+    }
+    
+    /* Header */
+    header .tit-log{
+        height: 200px;
+    }
+    header .tit-log h1{
+        font-size: 38px;
+    }
+    header nav .ct-icones{
+        max-width: 600px;
+        padding: 20px 20px;
+    }
+    header nav .ct-icones a img{
+        width: 60px;
+    }
+
+
+    /* Seção de Prévias */
+    section .ct-previas{
+        margin: 30px auto;
+        display: block;
+        padding: 0px 24px;
+    }
+    section .ct-previas .post-preview{
+        margin-bottom: 30px;
+    }
+    section .ct-previas .post-preview a{
+        width: ;
+    }
+
+}

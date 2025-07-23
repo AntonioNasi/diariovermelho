@@ -7,106 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diário Vermelho</title>
 
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <meta name="description" content="Textos, pesamentos e outras cositaas a mais."/>
+    <meta property="og:title" content="Diário Vermelho"/>
+    <meta property="og:image" content="#"/>
+    <meta property="og:description" content="Textos, pesamentos e outras cositaas a mais."/>
+
+    <link rel="shortcut icon" type="image/x-icon" href="#"/>
+    <link rel="stylesheet" type="text/css" href="main.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Girassol&display=swap" rel="stylesheet">
 
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#cabecalho").load("cabecalho.html");
+        $("#footer2").load("rodape.html");
+      });
+    </script>
+
 </head>
 
 <body>
 
-    <div class="bar-top">
-        <div class="rd-social">
+    <header id="cabecalho"></header>
 
-            <a class="lk-rs" href="#">
-                <img src="./assets/instagram-icon.svg" alt="Instagram">
-            </a>
-            <a class="lk-rs" href="#">
-                <img src="./assets/youtuble-icon.svg" alt="Youtube">
-            </a>
-            <a class="lk-rs" href="#">
-                <img src="./assets/mail-icon.svg" alt="Email">
-            </a>
-
-        </div>
-    </div>
-
-    <header>
-
-        <div class="tit-log">
-            <a href="index.html">
-                <h1>Diário Vermelho</h1>
-            </a>
-        </div>
-
-        <nav>
-            <div class="ct-icones">
-
-                <a class="lk-icone" href="#">
-                    <img src="./assets/blog.png">
-                    <p>Blog</p>
-                </a>
-                <a class="lk-icone" href="#">
-                    <img id="livro" src="./assets/livros.png">
-                    <p>Livros</p>
-                </a>
-                <a class="lk-icone" href="#">
-                    <img src="./assets/artigos.png">
-                    <p>Artigos</p>
-                </a>
-                <a class="lk-icone" href="#">
-                    <img src="./assets/videos.png">
-                    <p>Vídeos</p>
-                </a>
-                <a class="lk-icone" href="#">
-                    <img src="./assets/eventos.png">
-                    <p>Eventos</p>
-                </a>
-                <a class="lk-icone" href="#">
-                    <img src="./assets/grupos.png">
-                    <p>Grupos</p>
-                </a>
-
-            </div>
-        </nav>
-    </header>
+    <script src="posts.js"></script>
 
     <section>
-        <div class="ct-previas">
-
-            <a class="previas" id="post9" href="#">
-                <h2>Este poste é um exemplo: ainda em construção</h2>
-            </a>
-            <a class="previas" id="post8" href="#">
-                <h2>Títulod do poste aqui</h2>
-            </a>
-            <a class="previas" id="post7" href="#">
-                <h2>Títulod do poste aqui</h2>
-            </a>
-            <a class="previas" id="post6" href="#">
-                <h2>Títulod do poste aqui</h2>
-            </a>
-            <a class="previas" id="post5" href="#">
-                <h2>Títulod do poste aqui</h2>
-            </a>
-            <a class="previas" id="post4" href="#">
-                <h2>Títulod do poste aqui</h2>
-            </a>
-            <a class="previas" id="post3" href="#">
-                <h2>Títulod do poste aqui</h2>
-            </a>
-            <a class="previas" id="post2" href="#">
-                <h2>Títulod do poste aqui</h2>
-            </a>
-            <a class="previas" id="post1" href="#">
-                <h2>Títulod do poste aqui</h2>
-            </a>
-
-        </div>
+        <div class="ct-previas" id="posts-container">Carregando...</div>
     </section>
+
+    <footer></footer>
     
 </body>
 </html>
