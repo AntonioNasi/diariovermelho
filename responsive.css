@@ -11,17 +11,26 @@
     
     /* Header */
     header .tit-log{
-        height: 200px;
+        height: 100px;
     }
     header .tit-log h1{
-        font-size: 38px;
+        font-size: 26px;
+    }
+    header nav{
+        width: 100%;
     }
     header nav .ct-icones{
-        max-width: 600px;
+        width: 100%;
         padding: 20px 20px;
+        gap: 50px;
+        flex-wrap: wrap;
+        justify-content:center;
     }
     header nav .ct-icones a img{
-        width: 60px;
+        width: 50px;
+    }
+    header nav .ct-icones a #livro{
+        width: 40px;
     }
 
 
@@ -29,13 +38,303 @@
     section .ct-previas{
         margin: 30px auto;
         display: block;
-        padding: 0px 24px;
+        padding: 0px 10px;
+        width: 100%;
     }
     section .ct-previas .post-preview{
         margin-bottom: 30px;
+        height: 300px;
     }
-    section .ct-previas .post-preview a{
-        width: ;
+    section .ct-previas .post-preview a img{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /* Página de Posts */
+    .sec-atg{
+        display: block;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .sec-atg article{
+        width: 100%;
+        padding: 20px 10px;
+    }
+    .sec-atg article .cx-txt p{
+        margin-bottom: 25px;
+    }
+    .sec-atg .bar-rgt{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width:600px) and (max-width:768px){
+
+    /* Barra topo */
+    .bar-top{
+        width: 100%;
+        height: 40px;
+    }
+    .bar-top .rd-social{
+        width: auto;
+    }
+    
+    /* Header */
+    header .tit-log{
+        height: 70px;
+    }
+    header .tit-log h1{
+        font-size: 24px;
+    }
+    header nav{
+        width: 100%;
+    }
+    header nav .ct-icones{
+        width: 100%;
+        padding: 20px 20px;
+        gap: 50px;
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+    header nav .ct-icones a img{
+        width: 40px;
+    }
+    header nav .ct-icones a #livro{
+        width: 30px;
+    }
+
+
+    /* Seção de Prévias */
+    section .ct-previas{
+        margin: 30px auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px 10px;
+        width: 100%;
+    }
+    section .ct-previas .post-preview{
+        margin-bottom: 30px;
+        height: 300px;
+        flex-basis: 31%;
+        flex-shrink: initial;
+    }
+    section .ct-previas .post-preview a img{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /* Página de Posts */
+    .sec-atg{
+        display: block;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .sec-atg article{
+        width: 100%;
+        padding: 20px 10px;
+    }
+    .sec-atg article .cx-txt p{
+        margin-bottom: 25px;
+    }
+    .sec-atg .bar-rgt{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+}
+
+
+
+
+
+@media screen and (min-width:768px) and (max-width:992px){
+
+    /* Barra topo */
+    .bar-top{
+        width: 100%;
+        height: 40px;
+    }
+    .bar-top .rd-social{
+        width: auto;
+    }
+    
+    /* Header */
+    header .tit-log{
+        height: 70px;
+    }
+    header .tit-log h1{
+        font-size: 24px;
+    }
+    header nav{
+        width: 100%;
+    }
+    header nav .ct-icones{
+        width: 100%;
+        padding: 20px 20px;
+        gap: 50px;
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+    header nav .ct-icones a img{
+        width: 40px;
+    }
+    header nav .ct-icones a #livro{
+        width: 30px;
+    }
+
+
+    /* Seção de Prévias */
+    section .ct-previas{
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        padding: 0px 15px;
+    }
+    section .ct-previas .post-preview:nth-child(1){
+        grid-column: 1/4;
+    }
+    section .ct-previas .post-preview{
+        margin-bottom: 30px;
+        height: 300px;
+    }
+    section .ct-previas .post-preview a img{
+        width: 100%;
+        height: 100%;
+    }
+    section .ct-previas .post-preview a h2{
+        font-size: 26px;
+    }
+
+
+    /* Página de Posts */
+    .sec-atg{
+        display: block;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .sec-atg article{
+        width: 100%;
+        padding: 20px 10px;
+    }
+    .sec-atg article .cx-txt p{
+        margin-bottom: 25px;
+    }
+    .sec-atg .bar-rgt{
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5%;
+    }
+    .sec-atg .bar-rgt .post-preview{
+        margin-bottom: 20px;
+        width: 47.5%;
+    }
+
+}
+
+
+
+
+
+@media screen and (min-width:992px) and (max-width:1200px){
+
+    /* Barra topo */
+    header{
+        width: 100%;
+    }
+    header .bar-top{
+        width: 100%;
+        height: 40px;
+    }
+    .bar-top .rd-social{
+        width: auto;
+    }
+    
+    /* Header */
+    header .tit-log{
+        height: 70px;
+    }
+    header .tit-log h1{
+        font-size: 24px;
+    }
+    header nav{
+        width: 100%;
+    }
+    header nav .ct-icones{
+        width: 100%;
+        padding: 20px 20px;
+        gap: 50px;
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+    header nav .ct-icones a img{
+        width: 40px;
+    }
+    header nav .ct-icones a #livro{
+        width: 30px;
+    }
+
+
+    /* Seção de Prévias */
+    section .ct-previas{
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+        padding: 0px 15px;
+    }
+    section .ct-previas .post-preview:nth-child(1){
+        grid-column: 1/4;
+        grid-row: 1/1;
+    }
+    section .ct-previas .post-preview{
+        margin-bottom: 30px;
+        height: 300px;
+    }
+    section .ct-previas .post-preview a img{
+        width: 100%;
+        height: 100%;
+    }
+    section .ct-previas .post-preview a h2{
+        font-size: 26px;
+    }
+
+
+    /* Página de Posts */
+    .sec-atg{
+        margin: 30px auto;
+        width: 1200px;
+        display: flex;
+        gap: 2%;
+        padding: 0px 20px;
+    }
+    .sec-atg article{
+        width: 68%;
+        padding: 20px 10px;
+    }
+    .sec-atg article .cx-txt p{
+        margin-bottom: 25px;
+    }
+    .sec-atg .bar-rgt{
+        width: 30%;
+        display: block;
+    }
+    .sec-atg .bar-rgt .post-preview{
+        margin-bottom: 20px;
+        width: 100%;
     }
 
 }
